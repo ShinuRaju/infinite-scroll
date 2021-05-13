@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container .photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+}
+
+.container .photo-container div {
+  position: relative;
+  min-width: 200px;
+  margin: 0 4px;
+}
+
+.container .photo-container div img {
+  width: 100%;
+}
+
+.container .photo-container div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
